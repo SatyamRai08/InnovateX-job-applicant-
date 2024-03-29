@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Job Portal</title>
+  <style>
+    /* General styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #e8d6ff; /* Dark lavender */
+      color: #333;
+    }
+
+    header {
+      background-color: #cc3355; /* Dark rose red */
+      color: #fff;
+      padding: 40px 20px; /* Increased padding */
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin-top: 20px; /* Added margin */
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 30px; /* Increased margin */
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      border: 1px solid #fff;
+      transition: background-color 0.3s, border-color 0.3s;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      background-color: #ff6699; /* Lighter rose red */
+      border-color: #ff6699;
+      animation: pulse 0.7s infinite alternate; /* Increased animation speed */
+    }
+
+    @keyframes pulse {
+      from {
+        transform: scale(1);
+      }
+      to {
+        transform: scale(1.05);
+      }
+    }
+
+    section {
+      padding: 30px; /* Increased padding */
+      margin-bottom: 60px; /* Increased margin */
+      background-color: #d3a4c4; /* Purple shade */
+      border-radius: 15px; /* Increased border radius */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increased box shadow */
+    }
+
+    h2 {
+      border-bottom: 3px solid #833c9f; /* Violet */
+      padding-bottom: 15px; /* Increased padding */
+      margin-bottom: 30px; /* Increased margin */
+      color: #c93657; /* Rose red */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increased box shadow */
+      padding: 15px; /* Increased padding */
+      border-radius: 8px; /* Increased border radius */
+      background-color: #f2d3e6; /* Pink shade */
+      font-size: 32px; /* Increased font size */
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #833c9f; /* Violet */
+      color: #fff;
+      padding: 30px;
+      text-align: center;
+      margin-top: 60px; /* Increased margin */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increased box shadow */
+    }
+
+    /* Job listing and candidate profile styles */
+    .job-listing, .candidate-profile {
+      border: 2px solid #c93657; /* Rose red */
+      border-radius: 10px; /* Increased border radius */
+      padding: 30px; /* Increased padding */
+      margin-bottom: 40px; /* Increased margin */
+      background-color: #f9c2d1; /* Pink shade */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increased box shadow */
+    }
+
+    .job-listing h3, .candidate-profile h3 {
+      margin-top: 0;
+      color: #833c9f; /* Violet */
+      border-bottom: 2px solid #c93657; /* Rose red */
+      padding-bottom: 15px; /* Increased padding */
+      margin-bottom: 20px; /* Increased margin */
+      font-size: 28px; /* Increased font size */
+      font-weight: bold;
+    }
+
+    .job-listing p:last-child, .candidate-profile p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Button styles */
+    .btn {
+      display: inline-block;
+      padding: 15px 30px; /* Increased padding */
+      background-color: #c93657; /* Rose red */
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px; /* Increased border radius */
+      transition: background-color 0.3s;
+      font-size: 20px; /* Increased font size */
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background-color: #a81f3c; /* Darker shade of rose red */
+    }
+
+    /* Form styles */
+    form {
+      background-color: #f2d3e6; /* Pink shade */
+      padding: 30px; /* Increased padding */
+      border-radius: 8px; /* Increased border radius */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increased box shadow */
+      margin-bottom: 40px; /* Increased margin */
+    }
+
+    input[type="text"], input[type="password"], input[type="email"], button {
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 20px; /* Increased margin */
+      border: 2px solid #c93657; /* Rose red */
+      border-radius: 8px; /* Increased border radius */
+      font-size: 18px; /* Increased font size */
+      font-weight: bold;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1 style="font-size: 36px; font-weight: bold;">Professional Job Portal</h1>
+    <!-- Navigation links -->
+    <nav>
+      <ul>
+        <li><a href="#job-listings">Explore Jobs</a></li>
+        <li><a href="#candidate-profiles">Find Candidates</a></li>
+        <li><a href="#login">Login</a></li>
+        <li><a href="#register">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="job-listings">
+    <h2>Find Your Next Opportunity</h2>
+    <!-- Job listings content -->
+    <div class="job-listing">
+      <h3>Software Engineer</h3>
+      <p>Description: Explore the latest opportunities in software engineering. Join leading tech companies and contribute to innovative projects.</p>
+      <p>Location: City, Country</p>
+      <a href="#" class="btn">Apply Now</a>
+    </div>
+    <!-- Add more job listings -->
+  </section>
+
+  <section id="candidate-profiles">
+    <h2>Discover Top Talent</h2>
+    <!-- Candidate profiles content -->
+    <div class="candidate-profile">
+      <h3>John Doe</h3>
+      <p>Skills: HTML, CSS, JavaScript, Python</p>
+      <p>Experience: 5 years</p>
+      <a href="#" class="btn">Contact</a>
+    </div>
+    <!-- Add more candidate profiles -->
+  </section>
+
+  <section id="login">
+    <h2>Secure Login</h2>
+    <!-- Login form -->
+    <form action="#">
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit" class="btn">Login</button>
+    </form>
+  </section>
+
+  <section id="register">
+    <h2>Join Our Community</h2>
+    <!-- Registration form -->
+    <form action="#">
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit" class="btn">Register</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Stay Updated</h2>
+    <p>Get the latest news and insights in the world of employment. Subscribe to our newsletter for regular updates.</p>
+  </section>
+
+  <section>
+    <h2>Connect With Us</h2>
+    <p>Follow us on social media for more job opportunities, career advice, and industry insights.</p>
+  </section>
+
+  <footer>
+    <p style="font-size: 20px; font-weight: bold;">&copy; 2024 Professional Job Portal. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Smooth scrolling animation
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth',
+          duration: 1200 // Increased duration to 1.2 seconds
+        });
+      });
+    });
+  </script>
+</body>
+</html>
